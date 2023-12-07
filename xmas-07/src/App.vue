@@ -24,7 +24,7 @@ export default {
     <table>
       <thead><th>fields</th><th>value</th><th>type</th></thead>
       <tr><td>id</td><td>1</td><td>number</td></tr>
-      <tr><td>customer</td><td>a</td><td>string (foreign key -> Customers.id)</td></tr>
+      <tr style="font-style: italic;"><td>customer</td><td>a</td><td>string (foreign key -> Customers.id)</td></tr>
       <tr><td>delivered</td><td>false</td><td>boolean</td></tr>
     </table>
     <p>For å hente ut data fra en slik database bruker vi SQL (Structured Query Language). SQL er et altså språk for å hente ut data fra databaser. Det er ikke så vanskelig å komme i gang med og bruker engelske ord for mye av funksjonaliteten.</p>
