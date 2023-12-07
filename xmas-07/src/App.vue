@@ -16,16 +16,16 @@ export default {
     <p>Databaser finner overalt og i mange varianter, omtrent alle programmer som gjør noe trenger en database for å lagre og organisere data. Tradisjonelle relasjonelle databaser er ikke noe hokus pokus. Det er tabeller med rader og kolonner og så kobles disse tabellene sammen med relasjoner. F.eks kan en tabell med kunder ha en kobling med ordre som er bestilt av kunden. Da kan en slik database for en butikk se slik ut:</p>
     <p><b>Customers</b></p>
     <table>
-      <thead><th>fields</th><th>value</th></thead>
-      <tr><td>id</td><td>a</td></tr>
-      <tr><td>name</td><td>Asbjørn</td></tr>
+      <thead><th>fields</th><th>value</th><th>type</th></thead>
+      <tr><td>id</td><td>a</td><td>string (key)</td></tr>
+      <tr><td>name</td><td>Asbjørn</td><td>string</td></tr>
     </table>
     <p><b>Orders</b></p>
     <table>
-      <thead><th>fields</th><th>value</th></thead>
-      <tr><td>id</td><td>1</td></tr>
-      <tr><td>customer</td><td>a</td></tr>
-      <tr><td>delivered</td><td>false</td></tr>
+      <thead><th>fields</th><th>value</th><th>type</th></thead>
+      <tr><td>id</td><td>1</td><td>number</td></tr>
+      <tr><td>customer</td><td>a</td><td>string (foreign key -> Customers.id)</td></tr>
+      <tr><td>delivered</td><td>false</td><td>boolean</td></tr>
     </table>
     <p>For å hente ut data fra en slik database bruker vi SQL (Structured Query Language). SQL er et altså språk for å hente ut data fra databaser. Det er ikke så vanskelig å komme i gang med og bruker engelske ord for mye av funksjonaliteten.</p>
     <p>For å hente ut alle ordre en bestemt kunde har lagt i databasen kan vi bruke en SQL spørring som ser slik ut:<br/>
